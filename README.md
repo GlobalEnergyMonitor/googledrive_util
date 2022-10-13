@@ -1,2 +1,2 @@
 # googledrive_interface
-An API wrapper to read and write to google drive.
+Reads and writes to google drive using gspread and googleapiclient.
