@@ -14,7 +14,33 @@ Last Updated: October 13th 2022
 ### Client Secret File
 See [here](https://developers.google.com/sheets/api/quickstart/python) for setting up Google Developer account and create an OAuth credential.
 Following through the "Set up your environment" step should yield you a JSON file on your computer.  
-TODO: Add step-by-step
+
+Step-by-step:
+* [Create a developer account](https://developers.google.com/).
+* [Create, shut down, and restore projects](https://support.google.com/googleapi/answer/6251787?hl=en#zippy=%2Ccreate-a-project).
+* Go to [the API Console Dashboard](https://console.developers.google.com/).
+* Select the project you just created: find the pull down menu right of the "Google Cloud" at the top left of the page.
+* Go to the three horizontal bars in the top left corner, select APIs & Services > Enable Apis & Services.
+* Click on "+ Enable Apis and Services."
+* In the APL Library find and enable:
+  * Google Sheets API
+  * Google Drive API
+* Go back to APIs & Services (make sure you aren't under the Drive or Sheet API). You can do this from the three horizontal bars icon.
+* Go to Credentials.
+  * Create an [OAuth Credentials](https://developers.google.com/workspace/guides/configure-oauth-consent).
+    * Click on + CREATE CREDENTIALS > OAuth client ID.
+    * Go to OAuth consent screen.
+    * Choose Internal for User Type.
+    * Then only fill out the app name (same as the project name) and the emails.
+    * You can specify th app domain as the GEM domain.
+    * No need to add anything to Scopes.
+    * Back to Dashboard.
+  * If you want to make a Service Account, then [this](https://www.youtube.com/watch?v=4ssigWmExak) is a straightfoward resource.
+* Go to Credentials.
+  * Click on + CREATE CREDENTIALS > OAuth Client ID.
+  * Choose "Desktop App" in the Application Type and give the name.
+  * Download the JSON file to your local and move the file to where you store credentials.
+  * Make sure you take a note on the local path.
 
 ### Install Google Client Library and gspread package
 Make sure you have the following installed on your environment (conda, any IDE such as Pycharm, jupyter, etc...).    
