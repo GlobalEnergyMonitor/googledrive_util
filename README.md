@@ -64,6 +64,7 @@ Make sure you have the following installed on your environment (conda, colab, ju
 - Run google_drive_util.py. This will executes the main function which calls the read_usecase function. 
 - If this is your first time running this script, you will be prompted to approve access to the spreadsheet by google (on your web browser and also on your phone).
 - Once you approve access, then you should see the contents of the sample_1 file printed on your console.
+**TROUBLESHOOTING: If you're using a VPN you may need to disable it in order for google to authenticate you**
 
 ### Read the documentation on google_drive_util.py
 Please read through the docstrings and comments in this file to understand the general use cases of the Google Client Library and Gspread.
